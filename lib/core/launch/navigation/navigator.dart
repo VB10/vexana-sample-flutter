@@ -3,7 +3,7 @@ import 'package:vexana/core/launch/navigation/route_path.dart';
 import 'package:vexana/ui/shared/widgets/notfound.dart';
 import 'package:vexana/ui/view/authentication/login_view.dart';
 
-class Navigator {
+class NavigatorGenerate {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutePath.LOGIN:

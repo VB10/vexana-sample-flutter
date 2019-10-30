@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vexana/core/launch/constants.dart';
+import 'package:vexana/core/launch/navigation/navigator.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
           ThemeData(fontFamily: Constants.POPPINS, iconTheme: IconThemeData()),
       title: 'Material App',
       home: Scaffold(),
+      onGenerateRoute: NavigatorGenerate.generateRoute,
     );
   }
 }
